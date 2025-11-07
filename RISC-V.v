@@ -327,6 +327,10 @@ initial begin
     uut.Inst_Memory.IMemory[8] = 32'h00100313; // addi x6, x0, 1 (skipped)
     uut.Inst_Memory.IMemory[9] = 32'h00200313; // label1: addi x6, x0, 2
     uut.Inst_Memory.IMemory[10] = 32'h0000006F; // jal x0, 0 (halt)
+    
+    //GTKWave
+    $dumpfile("riscv_dump.vcd");
+    $dumpvars(0, tb_top);
 
     // Setup simulation
     clk = 0;
