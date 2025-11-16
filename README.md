@@ -150,7 +150,7 @@ If you don't have an assembler handy:
 This project is licensed under the MIT License.
 
 ## AI Usage
-- AI was used for debugging and creating the testbench from the given sample test assembly program:
+- AI was used for debugging, creating this README, and creating the testbench from the given sample test assembly program:
   ```asm
   .section .text
   .globl _start
